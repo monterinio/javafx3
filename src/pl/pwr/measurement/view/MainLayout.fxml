@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="344.0" prefWidth="396.0" stylesheets="@mainStyle.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pl.pwr.measurement.controller.MainController">
+   <top>
+      <MenuBar id="menu-bar" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" BorderPane.alignment="CENTER">
+        <menus>
+          <Menu id="item-1" mnemonicParsing="false" text="Plik">
+            <items>
+              <MenuItem id="menu-item-1" fx:id="connectionSettingsItem" mnemonicParsing="false" text="Ustawienia polaczenia" />
+              <MenuItem id="menu-item-2" fx:id="closeItem" mnemonicParsing="false" text="Zamknij" />
+            </items>
+          </Menu>
+          <Menu id="item-2" mnemonicParsing="false" text="Pomoc">
+            <items>
+              <MenuItem id="menu-item-3" fx:id="aboutItem" mnemonicParsing="false" text="O programie" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </top>
+   <center>
+      <VBox id="background-1" alignment="CENTER" maxHeight="1.7976931348623157E308" minHeight="-Infinity" prefHeight="310.0" prefWidth="400.0" BorderPane.alignment="TOP_CENTER">
+         <children>
+            <Label id="label-1" text="Ciśnienie:" VBox.vgrow="ALWAYS">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="5.0" />
+               </VBox.margin>
+            </Label>
+            <Slider fx:id="pressureSlider" blockIncrement="1.0" majorTickUnit="1.0" max="10.0" maxWidth="-Infinity" minorTickCount="1" prefHeight="40.0" prefWidth="250.0" showTickLabels="true" showTickMarks="true" VBox.vgrow="NEVER">
+               <VBox.margin>
+                  <Insets bottom="30.0" />
+               </VBox.margin>
+            </Slider>
+            <Separator prefWidth="200.0" />
+            <Label id="label-2" text="Prąd:">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="5.0" />
+               </VBox.margin>
+            </Label>
+            <Slider fx:id="currentSlider" majorTickUnit="1.0" max="5.0" maxWidth="-Infinity" minorTickCount="2" prefHeight="40.0" prefWidth="250.0" showTickLabels="true" showTickMarks="true" VBox.vgrow="ALWAYS">
+               <VBox.margin>
+                  <Insets bottom="30.0" />
+               </VBox.margin>
+            </Slider>
+            <Separator prefWidth="200.0" />
+            <Label text="Uruchamianie przyrządów pomiarowych:">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <HBox alignment="CENTER">
+               <children>
+                  <ProgressBar fx:id="progressBar" prefWidth="200.0" progress="0.0">
+                     <VBox.margin>
+                        <Insets bottom="20.0" top="15.0" />
+                     </VBox.margin>
+                  </ProgressBar>
+                  <ProgressIndicator fx:id="progressIndicator" progress="0.0" />
+               </children>
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="CENTER">
+               <children>
+                  <Button id="button-1" fx:id="stopMeasurement" mnemonicParsing="false" text="Zatrzymaj pomiar">
+                     <HBox.margin>
+                        <Insets right="10.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button id="button-1" fx:id="startMeasurement" mnemonicParsing="false" text="Uruchom pomiar">
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+            </HBox>
+         </children>
+      </VBox>
+   </center>
+</BorderPane>

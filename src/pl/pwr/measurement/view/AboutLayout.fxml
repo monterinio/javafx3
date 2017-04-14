@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<VBox alignment="CENTER" prefHeight="166.0" prefWidth="270.0" stylesheets="/pl/pwr/measurement/view/subStyle.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pl.pwr.measurement.controller.AboutController">
+   <children>
+      <TextArea id="background-1" fx:id="tArea" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="200.0" prefWidth="200.0" text="Program Industrial Control służy do sterowania&#10;procesami przemysłowymi.&#10;Wykonany w ramach pracy magisterskiej na&#10;PWr przez Mariusza Mikołajczaka." VBox.vgrow="ALWAYS" />
+      <Button fx:id="okButton" alignment="BOTTOM_CENTER" mnemonicParsing="false" text="OK" VBox.vgrow="ALWAYS" />
+   </children>
+   <opaqueInsets>
+      <Insets />
+   </opaqueInsets>
+</VBox>

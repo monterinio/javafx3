@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<VBox id="background-1" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="110.0" prefWidth="250.0" stylesheets="/pl/pwr/measurement/view/subStyle.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pl.pwr.measurement.controller.IPErrorController">
+   <children>
+      <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="Wprowadź poprawny adres IP!" textAlignment="CENTER" VBox.vgrow="ALWAYS">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Button fx:id="okButton" alignment="BOTTOM_CENTER" mnemonicParsing="false" prefWidth="80.0" text="OK" VBox.vgrow="ALWAYS">
+         <VBox.margin>
+            <Insets bottom="10.0" />
+         </VBox.margin>
+      </Button>
+   </children>
+</VBox>

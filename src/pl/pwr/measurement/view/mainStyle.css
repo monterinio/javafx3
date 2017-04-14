@@ -1,0 +1,65 @@
+#button-1 {
+	    -fx-background-color:
+        linear-gradient(#708090 10.0%, #778696 20.0%, #7E8D9B 30.0%, #8593A1 40.0%, #8D99A6 50.0%,
+        #94A0AC 60.0%, #9BA6B1 70.0%, #A2ACB7 80.0%, #A9B3BC 90.0%, #B0B9C2 100.0%),
+        linear-gradient(#8593A1, #EAECEE);
+    -fx-background-insets: 0.0,1.0;
+    -fx-background-radius: 2.0,1.0;
+    -fx-padding: 3.0 30.0 3.0 30.0;
+
+    -fx-text-fill: black;
+    -fx-font-family: "Helvetica";
+    -fx-font-size: 14.0px;
+    -fx-font-weight: bold;
+	-fx-border-color: black;
+	-fx-effect: dropshadow( three-pass-box , rgba(0.0,0.0,0.0,0.6) , 5.0, 0.0 , 0.0 , 1.0 );
+
+}
+
+#button-1:hover {
+	-fx-background-color:
+    linear-gradient(#708090 10.0%, #778696 20.0%, #7E8D9B 30.0%, #8593A1 40.0%, #8D99A6 50.0%,
+    #94A0AC 60.0%, #9BA6B1 70.0%, #A2ACB7 80.0%, #A9B3BC 90.0%, #B0B9C2 100.0%),
+    linear-gradient(#666699, #BABAD1);
+	-fx-text-fill: #ffffff;
+	-fx-font-weight: bold;
+	-fx-cursor: hand;
+}
+
+
+#menu-bar {
+	-fx-background-color:
+        linear-gradient(#708090 10.0%, #778696 20.0%, #7E8D9B 30.0%, #8593A1 40.0%, #8D99A6 50.0%,
+        #94A0AC 60.0%, #9BA6B1 70.0%, #A2ACB7 80.0%, #A9B3BC 90.0%, #B0B9C2 100.0%),
+        linear-gradient(#8593A1, #EAECEE);
+    -fx-background-insets: 0.0,1.0;
+    -fx-background-radius: 2.0,1.0;
+	-fx-border-color: black;
+}
+
+
+#background-1{
+	-fx-background-color: linear-gradient(#EDEDFF, #F7F7FF);
+}
+
+#label-1, label-2 {
+	-fx-text-fill: black;
+    -fx-font-family: "Helvetica";
+    -fx-font-size: 18.0px;
+}
+
+.slider {
+	-fx-background-insets: 1.0 0.0 -1.0 0.0, 0.0, 1.0;
+    -fx-background-radius: 2.5, 2.5, 1.5;
+    -fx-padding: 0.208333em; /* 2.5 */
+    -fx-border-radius: 10;
+    -fx-background-color: rgb(100,200,200);
+}
+
+.progress-bar {
+	-fx-box-border: goldenrod;
+}
+
+.slider {
+	-fx-background-color: #FFF;
+}

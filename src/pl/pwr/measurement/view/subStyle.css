@@ -1,0 +1,25 @@
+.button {
+	 -fx-background-color:
+        linear-gradient(#708090 10%, #778696 20%, #7E8D9B 30%, #8593A1 40%, #8D99A6 50%,
+        #94A0AC 60%, #9BA6B1 70%, #A2ACB7 80%, #A9B3BC 90%, #B0B9C2 100%),
+        linear-gradient(#8593A1, #EAECEE);
+    -fx-background-insets: 0,1;
+    -fx-background-radius: 4,3;
+    -fx-padding: 3 30 3 30;
+
+    -fx-text-fill: black;
+    -fx-font-family: "Helvetica";
+    -fx-font-size: 14px;
+
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );
+}
+
+#background-1{
+	-fx-background-color: linear-gradient(#EDEDFF, #F7F7FF);
+}
+
+.label {
+	-fx-text-fill: black;
+    -fx-font-family: "Helvetica";
+    -fx-font-size: 14px;
+}
